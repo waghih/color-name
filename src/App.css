@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+}
+
+.App-header > input {
+  flex-basis: 0;
+  max-width: 100%;
+  flex-grow: 1;
+  border: none;
+  height: 70px;
+  font-size: 1.65rem;
+  padding-left: 16px;
+  border-right: 1px solid #bbb;
+}
+
+.App-header > input::placeholder {
+  font-style: italic;
+}
+
+.App-header > input:focus {
+  outline: none;
+}
+
+.Color-name-container {
+  display: flex;
+  flex-basis: 0;
+  max-width: 100%;
+  flex-grow: 1;
+  padding-right: 16px;
+}
+
+.Color-name {
+  flex-grow: 2;
+  text-align: left;
+  padding: 16px;
+  color: #3a3a3a;
+  font-size: 1.65rem;
+  align-self: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-body {
+  height: 90%;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.loader {
+  margin: 16px;
+  align-self: center;
+  font-size: 2px;
+  border-top: 1.1em solid #333;
+  border-right: 1.1em solid #333;
+  border-bottom: 1.1em solid #333;
+  border-left: 1.1em solid #b8b8bb;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
