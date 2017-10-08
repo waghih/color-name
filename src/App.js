@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   getColorName(value) {
-    const BASE_URL = "http://www.thecolorapi.com/id?hex";
+    const BASE_URL = "//www.thecolorapi.com/id?hex";
     let url = `${BASE_URL}=${value}&format=js`;
     this.setState({ isFecthing: true });
     fetch(url)
